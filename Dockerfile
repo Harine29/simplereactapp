@@ -11,7 +11,7 @@
 
 FROM node:latest
 
-COPY BODE_PORTAL ./
+COPY /home/cloud-user/BODE_PORTAL ./
 
 RUN npm install
 
