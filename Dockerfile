@@ -1,20 +1,20 @@
-# FROM node:13.12.0-alpine
-# WORKDIR /app
-# ENV PATH /app/node_modules/.bin:$PATH
-# COPY package.json ./
-# COPY package-lock.json ./
-# RUN npm install --silent
-# RUN npm install react-scripts@4.0.3 -g --silent
-# COPY . ./
-# CMD ["npm", "start"]
+ FROM node:13.12.0-alpine
+ WORKDIR /app
+ ENV PATH /app/node_modules/.bin:$PATH
+ COPY package.json ./
+ COPY package-lock.json ./
+ RUN npm install --silent
+ RUN npm install react-scripts@4.0.3 -g --silent
+ COPY . ./
+ CMD ["npm", "start"]
 
 
-FROM node:latest
+#FROM node:latest
 
-COPY /home/cloud-user/BODE_Portal .
+#COPY /home/cloud-user/BODE_Portal .
 
-RUN npm install
+#RUN npm install
 
-COPY .. 
+#COPY .. 
 
-CMD ["npm", "start"]
+#CMD ["npm", "start"]
