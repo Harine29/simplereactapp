@@ -22,7 +22,7 @@ steps:
     dockerRegistryEndpoint: 'Docker Hub'
     command : 'Build an image'
     dockerFile: '/Dockerfile'
-    imageName: '$image1'
+    imageName: 'image1'
     
 
     
