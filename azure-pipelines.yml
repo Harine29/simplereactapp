@@ -16,6 +16,16 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
+- task: Docker@1
+  displayName: 'Build Docker Image'
+  inputs:
+    dockerRegistryEndpoint: 'Docker Hub'
+    command : 'Build an image'
+    dockerFile: '/Dockerfile'
+    imageName: '$image1'
+    
+
+    
 - script: |
     git --version
     git clone https://rb-devops.bosch.com/COL-CI_BODE/BODE/_git/BODE_Portal
