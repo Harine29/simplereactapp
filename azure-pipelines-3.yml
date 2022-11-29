@@ -8,7 +8,7 @@ trigger:
 - main
 
 pool:
-  name: test-1
+  name: Demo_Agent_Pool
 
 steps:
 - task: NodeTool@0
