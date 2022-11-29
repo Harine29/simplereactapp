@@ -17,7 +17,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    git clone https://rb-devops.bosch.com/COL-CI_BODE/BODE/_git/BODE_Portal
+    git --version
     npm install
     npm run build
   displayName: 'npm install and build'
