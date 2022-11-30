@@ -4,7 +4,7 @@
  COPY package.json ./
  COPY package-lock.json ./
  RUN npm install 
-#RUN npm install react-scripts@4.0.3 -g --silent
+ RUN npm install react-scripts@4.0.3 
  COPY . ./
 CMD ["npm", "start"]
 
