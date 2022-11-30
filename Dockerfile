@@ -1,6 +1,8 @@
  FROM node:13.12.0-alpine
  WORKDIR /app
  ENV PATH /app/node_modules/.bin:$PATH
+ ENV http_proxy=http://172.19.160.1:8080/
+ ENV https_proxy=http://172.19.160.1:8080/
  COPY package.json ./
  COPY package-lock.json ./
  RUN npm install 
