@@ -1,8 +1,8 @@
-version: "0"
+#version: "0"
 
-services: 
+#services: 
         
 
-    BODE_Portal:
-        image: image1
-        ports: "80:3000"
+    #BODE_Portal:
+        #image: image1
+       # ports: "80:3000"
