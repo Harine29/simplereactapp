@@ -1,7 +1,8 @@
-# Node.js with React
-# Build a Node.js project that uses React.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+- task: Docker@2
+  inputs:
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
 
 trigger:
 - CI/CD
@@ -10,11 +11,7 @@ pool:
   name: BODE-Development-IPZ
 
 
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+
 
 - task: Docker@1
   displayName: 'Build Docker Image'
