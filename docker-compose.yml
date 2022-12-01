@@ -1,0 +1,8 @@
+version: "0"
+
+services: 
+        
+
+    BODE_Portal:
+        image: image1
+        ports: "80:3000"
