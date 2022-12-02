@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Welcome to BGSW 25
+          Welcome Dinesh
         </a>
       </header>
     </div>
