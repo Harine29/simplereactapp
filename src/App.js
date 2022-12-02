@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Hello Dinesh
+          Welcome to Bosch
         </a>
       </header>
     </div>
