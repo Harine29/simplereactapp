@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-        Task Completed Dinesh
+        Task Completed 
         </a>
       </header>
     </div>
